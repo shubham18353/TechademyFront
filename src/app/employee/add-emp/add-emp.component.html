@@ -1,0 +1,36 @@
+<div class="mb-lg-2">
+    <label class="col-sm-10 col-form-label">Employee Name</label>
+    <div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="name" placeholder="Enter Employee Name" >
+    </div>
+    <label class="col-sm-5 col-form-label">Employee Pay Scale</label>
+    <div class="col-sm-10" >
+    <input type="number" class="form-control" [(ngModel)]="payscale" placeholder="Enter Pay Scale" >
+    </div>
+    <label class="col-sm-5 col-form-label">Employee Designation</label>
+    <div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="desigId" placeholder="Enter Employee Designation" >
+    </div>
+<label class="col-sm-5 col-form-label">Employee Phone Number</label>
+<div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="phone" placeholder="Enter Employee Phone" >
+</div>
+<label class="col-sm-5 col-form-label">Employee Email</label>
+<div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="email" placeholder="Enter Employee Email" >
+</div>
+<label class="col-sm-5 col-form-label">Employee Address</label>
+<div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="address" placeholder="Enter Employee Address" >
+</div>
+<label class="col-sm-5 col-form-label">Employee Remaining Leaves</label>
+<div class="col-sm-10" >
+    <input type="number" class="form-control" [(ngModel)]="leaveId" placeholder="Enter Active Leaves" >
+</div>
+<label class="col-sm-5 col-form-label">Employee Status</label>
+<div class="col-sm-10" >
+    <input type="text" class="form-control" [(ngModel)]="isWorking" placeholder="Enter Employee Status" >
+</div>
+</div>
+<button (click)="addEmployee()" *ngIf="emp.id==0" class="btn btn-primary">Add</button>
+<button (click)="updateEmployee()" *ngIf="emp.id!=0" class="btn btn-primary">Update</button>

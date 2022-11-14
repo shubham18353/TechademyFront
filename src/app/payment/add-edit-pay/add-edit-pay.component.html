@@ -1,0 +1,18 @@
+<div class="mb-lg-2">
+    <label class="col-sm-10 col-form-label">Fixed Salary</label>
+    <div class="mb-3" >
+    <input type="number" class="form-control" [(ngModel)]="fixedPay" placeholder="Enter Fixed Salary" >
+    </div>
+    <label class="col-sm-5 col-form-label">Variable Salary</label>
+    <div class="mb-3" >
+    <input type="number" class="form-control" [(ngModel)]="variablePay" placeholder="Enter Variable Salary" >
+    </div>
+    <label class="col-sm-5 col-form-label">Cost To Company</label>
+    <div class="mb-3" >
+    <input type="number" class="form-control" [(ngModel)]="costToCompany" placeholder="Enter Cost to Company" >
+    </div>
+
+</div>
+<button (click)="addPayment()" *ngIf="pay.payscale==0" class="btn btn-primary">Add</button>
+<button (click)="updatePayment()" *ngIf="pay.payscale!=0" class="btn btn-primary">Update</button>
+
